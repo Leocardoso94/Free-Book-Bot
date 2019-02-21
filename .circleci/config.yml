@@ -20,4 +20,4 @@ jobs:
     steps:
       - checkout
 
-      - run: pip install httplib2 || python3 script/packtpub.py
+      - run: sudo pip install httplib2 && sudo pip install json && python3 script/packtpub.py
