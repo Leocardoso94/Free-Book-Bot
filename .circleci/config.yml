@@ -20,6 +20,5 @@ workflows:
             branches:
               only:
                 - master
-                - beta
     jobs:
       - build
