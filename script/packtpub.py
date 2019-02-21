@@ -9,7 +9,7 @@ def main():
     http_obj = Http()
     url = '<URL-PROVIDED-BY-GOOGLE-CHAT>'
     packtpub_url = 'https://www.packtpub.com/packt/offers/free-learning'
-    
+
     # get current offers
     now = datetime.datetime.now()
     nowDate = now.strftime('%Y-%m-%d')
