@@ -7,7 +7,7 @@ from json import dumps, loads
 #
 def main():
     http_obj = Http()
-    url = '<URL-PROVIDED-BY-GOOGLE-CHAT>'
+    url = 'https://chat.googleapis.com/v1/spaces/AAAADxpD2dc/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=WxwfLTQizAX8WEheMF6ByWuTxtAUX9Jvk33S2sLq-LI%3D'
     packtpub_url = 'https://www.packtpub.com/packt/offers/free-learning'
 
     # get current offers
