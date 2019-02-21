@@ -24,15 +24,14 @@ jobs:
 
 workflows:
   version: 2
-  commit:
-    jobs:
-      - deploy
   nightly:
     triggers:
       - schedule:
-          cron: "* * * * *"
+          cron: "0 0 * * *"
           filters:
             branches:
               only:
                 - master
                 - beta
+    jobs:
+      - deploy
