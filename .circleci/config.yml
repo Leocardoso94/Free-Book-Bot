@@ -20,4 +20,4 @@ jobs:
     steps:
       - checkout
 
-      - run: python3 script/packtpub.py
+      - run: pip install httplib2 || python3 script/packtpub.py
