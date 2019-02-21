@@ -21,3 +21,18 @@ jobs:
       - checkout
 
       - run: sudo pip install httplib2 && python3 script/packtpub.py
+
+workflows:
+  version: 2
+  commit:
+    jobs:
+      - checkout
+  nightly:
+    triggers:
+      - schedule:
+          cron: "* *  * * *"
+          filters:
+            branches:
+              only:
+                - master
+                - beta
